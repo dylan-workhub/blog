@@ -1,0 +1,44 @@
+#text-body h1{
+  color:#4e545c;
+  font-size:6em;
+}
+#text-body p{
+  font-size:1.8em;
+}
+body{
+  background-color:#e5e8e8;
+  color:#000401;
+  font-family: 'Roboto Mono', monospace;
+}
+#text-body{
+  margin-left:30em;
+  margin-right:30em;
+  margin-top:5em;
+  display:flex;
+}
+#text-body aside{
+  float:left;
+  align-self:center;
+  margin-right:8em;
+}
+#text-body main{
+  float:right;
+}
+aside{
+  font-size:1.3em;
+}
+a{
+  color:#4e545c;
+}
+a:hover{
+  color:#8d9797;
+}
+aside ul li::marker{
+  color:#4e545c;
+}
+aside ul li{
+  list-style-type:circle;
+}
+aside ul li:hover{
+  list-style-type:disc;
+}
