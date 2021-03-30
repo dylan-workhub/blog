@@ -1,6 +1,7 @@
 #text-body h1{
   color:#4e545c;
   font-size:6em;
+  margin:0;
 }
 #text-body p{
   font-size:1.8em;
@@ -10,19 +11,13 @@ body{
   color:#000401;
   font-family: 'Roboto Mono', monospace;
 }
-#text-body{
-  margin-left:30em;
-  margin-right:30em;
-  margin-top:5em;
-  display:flex;
-}
 #text-body aside{
   float:left;
-  align-self:center;
-  margin-right:8em;
+  position:fixed;
 }
 #text-body main{
-  float:right;
+  margin:auto;
+  width:60%;
 }
 aside{
   font-size:1.3em;
