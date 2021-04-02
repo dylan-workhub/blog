@@ -1,10 +1,10 @@
 #text-body h1{
   color:#4e545c;
-  font-size:6em;
+  font-size:8vw;
   margin:0;
 }
 #text-body p{
-  font-size:1.8em;
+  font-size:3.5vmin;
 }
 body{
   background-color:#e5e8e8;
@@ -18,10 +18,9 @@ body{
 #text-body main{
   margin:auto;
   width:60%;
-  text-align:justify;
 }
 aside{
-  font-size:1.3em;
+  font-size:3vmin;
 }
 a{
   color:#4e545c;
@@ -37,4 +36,20 @@ aside ul li{
 }
 aside ul li:hover{
   list-style-type:disc;
+}
+/*Below are the Media queries*/
+@media screen and (min-width:200px) and (max-width:767px){
+  body{
+    width:100vw;
+    height:auto;
+  }
+  #text-body p{
+    font-size:4vmin;
+  }
+  #post-link{
+    position:absolute;
+    width:1px;
+    height:1px;
+    left:-10000px;
+  }
 }
