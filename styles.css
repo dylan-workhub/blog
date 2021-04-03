@@ -1,55 +1,113 @@
+body{
+  background-color:#e5e8e8;
+  color:#000401;
+  font-family: 'Zilla Slab', serif;
+  padding:0;
+  margin:0;
+}
+
+header{
+  background-color:hsl(180, 6%, 80%);
+  margin-bottom:5vh;
+}
+
+#name{
+  font-size:6vmin;
+  text-decoration:none;
+}
+
+header a{
+  font-size:3.3vmin;
+  text-decoration:none;
+}
+
+nav{
+  padding-left:5vh;
+  display:flex;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  gap:3vmin;
+  list-style-type:none;
+}
+
+
+aside{
+  font-size:3vmin;
+  padding-left:5vh;
+}
+
+#first-li{
+  list-style-type:none;
+}
+
+aside ul li::marker{
+  color:#4e545c;
+}
+
+aside ul li{
+  list-style-type:circle;
+}
+
+aside ul li:hover{
+  list-style-type:disc;
+}
+
+a{
+  color:#4e545c;
+}
+
+a:hover{
+  color:#8d9797;
+}
+
+#text-body{
+  display:grid;
+  grid-template-columns:30fr 70fr;
+}
+
 #text-body h1{
   color:#4e545c;
   font-size:8vw;
   margin:0;
 }
+
 #text-body p{
   font-size:3.5vmin;
 }
-body{
-  background-color:#e5e8e8;
-  color:#000401;
-  font-family: 'Roboto Mono', monospace;
-}
+
 #text-body aside{
-  float:left;
   position:fixed;
+  grid-column:1/2;
 }
+
 #text-body main{
-  margin:auto;
-  width:60%;
+  grid-column:2/4;
 }
-aside{
-  font-size:3vmin;
-}
-a{
-  color:#4e545c;
-}
-a:hover{
-  color:#8d9797;
-}
-aside ul li::marker{
-  color:#4e545c;
-}
-aside ul li{
-  list-style-type:circle;
-}
-aside ul li:hover{
-  list-style-type:disc;
-}
+
 /*Below are the Media queries*/
 @media screen and (min-width:200px) and (max-width:767px){
+
   body{
     width:100vw;
     height:auto;
   }
+
+  #text-body{
+    display:flex;
+  }
+
   #text-body p{
     font-size:4vmin;
   }
+
   #post-link{
     position:absolute;
     width:1px;
     height:1px;
     left:-10000px;
   }
+
 }
