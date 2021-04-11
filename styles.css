@@ -1,3 +1,8 @@
+/*
+The elements below should be in (roughly) the order that they appear in the index.html
+file.
+*/
+
 body{
   background-color:#e5e8e8;
   color:#000401;
@@ -85,6 +90,7 @@ a:hover{
 
 #text-body main{
   grid-column:2/4;
+  padding-right:10vmin;
 }
 
 /*Below are the Media queries*/
@@ -108,6 +114,13 @@ a:hover{
     width:1px;
     height:1px;
     left:-10000px;
+  }
+
+}
+@media screen and (min-width:1100px){
+
+  #text-body{
+    grid-template-columns:20fr 80fr;
   }
 
 }
